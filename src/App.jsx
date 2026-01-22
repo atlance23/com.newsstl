@@ -1,13 +1,14 @@
-import Header from './components/Header'
-import WeatherSlider from './components/WeatherSlider';
+import { Routes, Route, Link } from 'react-router-dom';
+import Home from './pages/Home';
 
 function App() {
   const d = new Date();
 
   return (
     <>
-      <Header />
-      <WeatherSlider />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   )
 }
