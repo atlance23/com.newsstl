@@ -1,3 +1,6 @@
+import Radar from "./Radar";
+import RoadConditions from "./RoadConditions";
+
 export default function WeatherSlider() {
     return (
         <>
@@ -13,13 +16,13 @@ export default function WeatherSlider() {
                         <p><span className="buttonTitle">FORECAST</span> <span className="mobileIcon"></span></p>
                     </div>
                 </div>
-                <div id="roadConditions">
-
+                <div className="slide" id="roadConditions">
+                    <RoadConditions />
                 </div>
-                <div id="weatherRadar">
-
+                <div className="slide" id="weatherRadar">
+                    <Radar />
                 </div>
-                <div id="forecast">
+                <div className="slide" id="forecast">
 
                 </div>
             </section>
