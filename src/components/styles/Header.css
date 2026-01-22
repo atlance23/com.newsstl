@@ -15,7 +15,7 @@ header {
 
 #headerBottomBar {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px;
     min-height: 30px;
     padding: 5px 20px;
@@ -44,7 +44,9 @@ header {
     border-radius: 50px;
     height: 50px;
     width: 50px;
-    background-color: var(--accent-color)
+    max-height: 50px;
+    max-width: 50px;
+    background: linear-gradient(var(--accent-color), #fff);
 }
 
 .topBarItem {
@@ -76,7 +78,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 105%; /* Starts the text completely off-screen to the right */
+    margin-left: 102vw; /* Starts the text completely off-screen to the right */
     animation: scrollingText 23s linear infinite; /* Binds the animation */
     font-weight: 700;
     width: 100vw;
@@ -89,6 +91,42 @@ header {
 
     100% {
         transform: translateX(-150%);
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    @keyframes scrollingText {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-170%);
+        }
+    }
+
+    .tickerContent {
+        animation: scrollingText 15s linear infinite; /* Binds the animation */
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #cta {
+        display: none;
+    }
+
+    #headerTopBar {
+        grid-template-columns: auto auto;
+        justify-content: flex-start;
+    }
+
+    #logo > div {
+        width: 40px;
+        height: 40px;
+    }
+
+    #logo > h1 {
+        font-size: 24px;
     }
 }
 

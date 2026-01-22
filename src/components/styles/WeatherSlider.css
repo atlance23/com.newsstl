@@ -1,23 +1,48 @@
 #weatherSliderContainer {
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     position: relative;
     overflow: hidden;
-}
-
-.slide {
-    width: 100vw;
-    height: 100vh;
-    padding: 60px 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('news.stl.hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('./news.stl.hero.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+}
+
+.slide {
+    width: 100%;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 80px;
+}
+
+.sliderMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.sliderMenu > div {
+    margin: 20px;
+}
+
+.sliderContent {
+    width: 100%;
+    min-height: 150vh;
 }

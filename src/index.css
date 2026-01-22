@@ -26,3 +26,10 @@ body {
 h1 {
     margin: 0;
 }
+
+.embed {
+  width: 80%;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 20px;
+}

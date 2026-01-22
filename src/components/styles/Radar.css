@@ -1,8 +1,7 @@
 .radar {
     width: 100%;
-    min-height: 600px;
+    height: 70vh;
     border-radius: 20px;
-    margin-top: -75px;
     overflow: hidden;
     background-color: #fff;
 }
