@@ -8,13 +8,12 @@ export default function WinterStorm() {
         "publisher":{
             "@type":"Organization",
             "name":"News STL",
-            "logo":"http://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png?cb=1"
         },
         "headline": "Winter Storm Warning Issued for St. Louis Metro: Here's What to Expect",
         "mainEntityOfPage": "https://newsstl.com/winterstorm",
-        "articleBody": "Director Comey says the probe into last year's US election would assess if crimes were committed.",
+        "articleBody": "ST. LOUIS – The National Weather Service has issued a winter storm warning for Saturday and Sunday across the St. Louis region, as a significant winter weather event is expected to bring heavy snowfall and dangerously cold temperatures this weekend. All counties in the St. Louis metropolitan area located south of the Interstate 70 corridor in both Missouri and Illinois are now included in the winter storm warning. The National Weather Service defines a Winter Storm Warning as an event in which heavy snow accumulations of at least 6 inches within 12 hours, or 8 inches within 24 hours, are expected. The warning may also be issued when sleet accumulation of one-half inch or greater is forecast. Based on the latest data, confidence is high that most of the St. Louis metro area will receive at least four inches of snow, with some counties expected to see significantly higher totals. Four inches represents the minimum expected accumulation, while some forecast models indicate isolated locations could receive up to one foot of snow by Sunday.",
         "image":[
-            
+            "https://images.pexels.com/photos/813871/pexels-photo-813871.jpeg"
         ],
         "datePublished":"	2026-01-22T18:30:00Z-06:00"
     }
@@ -26,6 +25,11 @@ export default function WinterStorm() {
 
     return (
         <>
+            <Helmet>
+                <title>News STL | St. Louis Winter Storm | January 2026</title>
+                <meta name="description" content="Latest updates on St. Louis winter storm - Janauary 2026" />
+                <link rel="canonical" href={window.location.href} />
+            </Helmet>
             <section id="hero">
                 <h1>St. Louis Winter Storm - January 2026</h1>
                 <p>{`Author: ${author} | Published: ${datePublished} | Updated: ${currentDate}`}</p>
