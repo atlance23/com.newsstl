@@ -4,7 +4,6 @@ import WeatherSlider from "../components/WeatherSlider";
 export default function Home() {
     return (
         <>
-            <Header />
             <WeatherSlider />
         </>
     );

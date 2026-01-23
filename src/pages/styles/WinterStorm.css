@@ -1,0 +1,33 @@
+#hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/stl.news.hero.jpg');
+    background-size: cover;
+    background-position: center center;
+    min-height: 600px;
+    width: 100vw;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+#content {
+    font-family: montserrat;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#content > p {
+    max-width: 90%;
+    width: 1000px;
+}

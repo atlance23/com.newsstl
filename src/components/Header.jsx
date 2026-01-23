@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './styles/Header.css';
 
 export default function Header() {
@@ -15,7 +16,7 @@ export default function Header() {
                     </div>
                     <div className="topBarItem" id="categories">
                         <div id="weather">
-
+                            <Link to="/winterstorm" />
                         </div>
                         <div id="local">
 
