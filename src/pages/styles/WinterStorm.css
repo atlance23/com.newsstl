@@ -1,5 +1,5 @@
 #hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/stl.news.hero.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/news.stl.hero.jpg');
     background-size: cover;
     background-position: center center;
     min-height: 600px;
@@ -12,6 +12,7 @@
     padding: 20px;
     font-weight: 600;
     line-height: 1.6;
+    text-align: center;
 }
 
 #content {
@@ -25,6 +26,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 32px;
 }
 
 #content > p {

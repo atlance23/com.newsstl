@@ -35,12 +35,14 @@ export default function WeatherSlider() {
                     <div id="radarButton" style={{cursor: "pointer"}}>
                         <p><span className="buttonTitle">RADAR</span> <span className="mobileIcon"></span></p>
                     </div>
-                    <div id="radarButton" style={{cursor: "pointer"}}>
-                        <p>
-                            <span className="buttonTitle">
-                                <Link to="/winterstorm" />
-                            </span>
-                        </p>
+                    <div id="winterStorm" style={{cursor: "pointer"}}>
+                        <Link to="/winterstorm">
+                            <p>
+                                <span className="buttonTitle" style={{cursor: "pointer", color: "#fff !importnant", textDecoration: "underline"}}>
+                                    WINTER STORM
+                                </span>
+                            </p>
+                        </Link>
                     </div>
                 </div>
                 <div className="sliderContent">
