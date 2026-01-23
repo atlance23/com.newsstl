@@ -2,6 +2,7 @@ import './styles/WeatherSlider.css'
 import Radar from "./Radar";
 import RoadConditions from "./RoadConditions";
 import Forecast from './Forecast';
+import { Link } from 'react-router-dom';
 
 export default function WeatherSlider() {
     $(document).ready(function(){
@@ -33,6 +34,13 @@ export default function WeatherSlider() {
                     </div>
                     <div id="radarButton" style={{cursor: "pointer"}}>
                         <p><span className="buttonTitle">RADAR</span> <span className="mobileIcon"></span></p>
+                    </div>
+                    <div id="radarButton" style={{cursor: "pointer"}}>
+                        <p>
+                            <span className="buttonTitle">
+                                <Link to="/winterstorm" />
+                            </span>
+                        </p>
                     </div>
                 </div>
                 <div className="sliderContent">

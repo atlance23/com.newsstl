@@ -1,6 +1,7 @@
 import { Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Header from './components/Header';
+import WinterStorm from './pages/WinterStorm';
 
 function App() {
   const d = new Date();
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Header />
         <Route path="/" element={<Home />} />
+        <Route path="/winterstorm" element={<WinterStorm />} />
       </Routes>
     </>
   )
