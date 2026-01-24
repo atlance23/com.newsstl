@@ -14,9 +14,7 @@ header {
 }
 
 #headerBottomBar {
-    display: grid;
-    grid-template-columns: auto;
-    grid-column-gap: 20px;
+    display: flex;
     min-height: 30px;
     padding: 5px 20px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
@@ -103,7 +101,7 @@ header {
 
 /* Container that clips the ticker */
 .ticker {
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     position: relative;
 }
