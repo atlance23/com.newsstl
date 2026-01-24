@@ -30,14 +30,10 @@ export default function Header() {
                     </div>
                 </div>
                 <div id="headerBottomBar">
-                    <div class="ticker">
-                        <div class="tickerTrack">
-                            <div class="tickerContent">
+                    <div className="ticker">
+                        <div className="tickerTrack">
                                 <span style={{color: "#fff", whiteSpace: "pre"}} className="tickerContent"><a style={{color: "#fff"}} href="https://forecast.weather.gov/MapClick.php?lat=38.635355&lon=-90.2009855">Read: NWS Issues Winter Storm Warning for St. Louis Metro</a> | <Link style={{color: "white"}} to="/stlroadconditions">[LIVE] View STL Road Conditions Live Updates</Link></span>
-                            </div>
-                            <div class="tickerContent">
                                 <span style={{color: "#fff", whiteSpace: "pre"}} className="tickerContent"><a style={{color: "#fff"}} href="https://forecast.weather.gov/MapClick.php?lat=38.635355&lon=-90.2009855">Read: NWS Issues Winter Storm Warning for St. Louis Metro</a> | <Link style={{color: "white"}} to="/stlroadconditions">[LIVE] View STL Road Conditions Live Updates</Link></span>
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -78,6 +78,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    width: 100vw;
 }
 
 @media screen and (max-width: 720px) {
@@ -102,7 +103,7 @@ header {
 
 /* Container that clips the ticker */
 .ticker {
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     position: relative;
 }
