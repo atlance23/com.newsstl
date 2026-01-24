@@ -99,22 +99,34 @@ header {
     }
 }
 
-/* Container that clips the ticker */
+/* ============================================================
+   OFF-SCREEN START + CONTINUOUS TICKER
+   APPEND TO BOTTOM OF CSS FILE
+   ============================================================ */
+
+/*
+CHANGE NOTE:
+This overrides the previous ticker animation so the content
+starts fully off-screen to the RIGHT and exits fully to the LEFT.
+*/
+
+/* Ensure ticker container clips correctly */
 .ticker {
     width: 100%;
     overflow: hidden;
     position: relative;
 }
 
-/* Track that moves continuously */
+/* Track begins off-screen */
 .tickerTrack {
     display: flex;
     width: max-content;
+    transform: translateX(100%);
     animation: tickerScroll 25s linear infinite;
-    animation-delay: 2s; /* 2-second pause before restarting */
+    animation-delay: 2s; /* pause before each loop */
 }
 
-/* Each content block */
+/* Content sizing remains dynamic */
 .tickerContent {
     display: inline-flex;
     align-items: center;
@@ -122,20 +134,19 @@ header {
     padding-right: 48px;
     white-space: nowrap;
     width: max-content;
-    font-weight: 700;
 }
 
-/* Seamless scrolling animation */
+/* Animation: right → left, fully off-screen */
 @keyframes tickerScroll {
     0% {
-        transform: translateX(0);
+        transform: translateX(100%);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }
 
-/* ---------- RESPONSIVE SPEED ADJUSTMENTS ---------- */
+/* ---------- RESPONSIVE SPEED TUNING ---------- */
 @media screen and (max-width: 1120px) {
     .tickerTrack {
         animation-duration: 18s;
