@@ -78,36 +78,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 102vw; /* Starts the text completely off-screen to the right */
-    animation: scrollingText 23s linear infinite; /* Binds the animation */
-    font-weight: 700;
-    width: 100vw;
-}
-
-@keyframes scrollingText {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-150%);
-    }
-}
-
-@media screen and (max-width: 1120px) {
-    @keyframes scrollingText {
-        0% {
-            transform: translateX(0);
-        }
-
-        100% {
-            transform: translateX(-170%);
-        }
-    }
-
-    .tickerContent {
-        animation: scrollingText 15s linear infinite; /* Binds the animation */
-    }
 }
 
 @media screen and (max-width: 720px) {
@@ -130,3 +100,64 @@ header {
     }
 }
 
+/* Container that clips the ticker */
+.ticker {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Track that moves continuously */
+.tickerTrack {
+    display: flex;
+    width: max-content;
+    animation: tickerScroll 25s linear infinite;
+    animation-delay: 2s; /* 2-second pause before restarting */
+}
+
+/* Each content block */
+.tickerContent {
+    display: inline-flex;
+    align-items: center;
+    gap: 48px;
+    padding-right: 48px;
+    white-space: nowrap;
+    width: max-content;
+    font-weight: 700;
+}
+
+/* Seamless scrolling animation */
+@keyframes tickerScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* ---------- RESPONSIVE SPEED ADJUSTMENTS ---------- */
+@media screen and (max-width: 1120px) {
+    .tickerTrack {
+        animation-duration: 18s;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .tickerTrack {
+        animation-duration: 14s;
+    }
+
+    .tickerContent {
+        gap: 32px;
+        font-size: 14px;
+    }
+}
+
+/* ---------- ACCESSIBILITY ---------- */
+@media (prefers-reduced-motion: reduce) {
+    .tickerTrack {
+        animation: none;
+        transform: translateX(0);
+    }
+}
