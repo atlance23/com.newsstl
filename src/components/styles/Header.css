@@ -15,7 +15,7 @@ header {
 
 #headerBottomBar {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto;
     grid-column-gap: 20px;
     min-height: 30px;
     padding: 5px 20px;
