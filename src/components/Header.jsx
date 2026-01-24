@@ -30,7 +30,7 @@ export default function Header() {
                     </div>
                 </div>
                 <div id="headerBottomBar">
-                    <span className="tickerContent"><a style={{color: "#fff"}} href="https://forecast.weather.gov/MapClick.php?lat=38.635355&lon=-90.2009855">Read: NWS Issues Winter Storm Warning for St. Louis Metro</a></span>
+                    <span className="tickerContent"><a style={{color: "#fff"}} href="https://forecast.weather.gov/MapClick.php?lat=38.635355&lon=-90.2009855">Read: NWS Issues Winter Storm Warning for St. Louis Metro</a> | <Link to="/stlroadconditions">[LIVE] View STL Road Conditions Live Updates</Link></span>
                 </div>
             </header>
         </>
