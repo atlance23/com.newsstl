@@ -29,7 +29,6 @@ export default function Header() {
                         <div>Subscribe</div>
                     </div>
                 </div>
-                <div></div>
             </header>
         </>
     )
