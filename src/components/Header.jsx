@@ -33,7 +33,6 @@ export default function Header() {
                     <div className="ticker">
                         <div className="tickerTrack">
                                 <span style={{color: "#fff", whiteSpace: "pre"}} className="tickerContent"><a style={{color: "#fff"}} href="https://forecast.weather.gov/MapClick.php?lat=38.635355&lon=-90.2009855">Read: NWS Issues Winter Storm Warning for St. Louis Metro</a> | <Link style={{color: "white"}} to="/stlroadconditions">[LIVE] View STL Road Conditions Live Updates</Link></span>
-                                <span style={{color: "#fff", whiteSpace: "pre"}} className="tickerContent"><a style={{color: "#fff"}} href="https://forecast.weather.gov/MapClick.php?lat=38.635355&lon=-90.2009855">Read: NWS Issues Winter Storm Warning for St. Louis Metro</a> | <Link style={{color: "white"}} to="/stlroadconditions">[LIVE] View STL Road Conditions Live Updates</Link></span>
                         </div>
                     </div>
                 </div>
